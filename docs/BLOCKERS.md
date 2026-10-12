@@ -13,7 +13,7 @@ All entries reflect observed missing resources as of 12 October 2026.
 
 User confirmed **no test environments designated yet** during this implementation.
 Safe local work was completed; no production or operational account was used.
-Source publication is authorized in this follow-up. PUBLICATION.md records actual
+Public source publication completed in this follow-up. PUBLICATION.md records actual
 remote/CI status; installed/live gates remain blocked. Missing resources
 block the affected acceptance gates, not review of the delivered source.
 

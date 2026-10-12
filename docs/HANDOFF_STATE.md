@@ -14,9 +14,9 @@ before/after and requires matching revisions across sites. Offline models prove
 this control flow; **26 installed checks remain unrun**.
 
 Public source destination: https://github.com/readyspace/ultimatesales-erpnext-connector.
-The owner explicitly authorized public source in this follow-up. PUBLICATION.md
-and the delivery manifest record actual GitHub Desktop/remote status and final
-commits. The older alpha-derived Git history stays local and is not pushed.
+Public source was created in GitHub Desktop and pushed to the verified public
+ReadySpace remote on main. First source commit: `a0b280917a6199b053183b9d18531ebe53bfbce5`.
+PUBLICATION.md and the delivery manifest record actual status and final commits. The older alpha-derived Git history stays local and is not pushed.
 The clean public history excludes downloaded third-party reference copies;
 immutable URLs/hashes and tools/fetch_security_rules.py reproduce the exact
 unchanged rules in ignored .reference-source. No release tag, Marketplace approval,

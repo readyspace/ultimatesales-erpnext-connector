@@ -13,11 +13,15 @@ is present in the source; credentials are entered only locally on future test si
 Original local implementation history is preserved privately. A new clean source
 repository excludes downloaded third-party code/rule copies; immutable source
 URLs/hashes and the fetcher reproduce unchanged rules without redistributing them.
-The GPL-3.0-only app licence remains unchanged. GitHub Desktop creates/registers
-the clean repository. Actual remote visibility, source commit and CI observations
-will be recorded after verification, with final archive hashes in the delivery manifest.
+The GPL-3.0-only app licence remains unchanged. GitHub Desktop created and registered the clean local repository on main.
+The GitHub API verified visibility=public, private=false and default_branch=main.
+The first pushed source commit is `a0b280917a6199b053183b9d18531ebe53bfbce5`, matching local HEAD at publication.
+Final archive/commit hashes are recorded in the delivery manifest.
 
-Publication execution: **PENDING at this preparation point**. No public-beta
+Publication execution: **PASS — created and pushed publicly**.
+Offline and unchanged-rule security CI runs were observed in progress for the
+first published commit; no successful remote result is claimed at this snapshot.
+The installed-site workflow was not dispatched. No public-beta
 release/tag, Marketplace submission, production rollout or installed/live approval
 is implied. Disposable Bench/Pilot/CRM resources remain undesignated; 26 installed
 checks are supplied but unrun. Publisher support/security contacts remain pending.

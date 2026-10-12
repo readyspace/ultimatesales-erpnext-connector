@@ -38,7 +38,7 @@ Status vocabulary: PASS / FAIL / BLOCKED / NOT RUN. An offline PASS is not an in
 | Live CRM API/round trip | BLOCKED | No designated location/token/automation-disable evidence; no live API call |
 | Bench / separate Pilot install | BLOCKED | Source-install recipes and CI configured, no environment designated |
 | Real worker kill/Redis restart/two-site/lifecycle | BLOCKED | Fault runbook/harness supplied; mocks do not establish these outcomes |
-| Remote CI runs | NOT RUN at local refresh | Offline/security workflows will run on publication; record actual remote results separately in PUBLICATION.md. Installed workflow remains undispatched. |
+| Remote CI runs | STARTED — completion not yet confirmed | Actual offline/security runs observed after source push; URLs/commit/status in PUBLICATION.md. Installed workflow remains undispatched. |
 | Documentation-only self-rehearsal / human acceptance | NOT RUN | No second installed rehearsal or independent tester |
 
 The original eight blocking findings came from commits in shared fixture helpers.

@@ -12,7 +12,7 @@ environment. All Frappe-site, Pilot and live CRM gates remain **BLOCKED**.
 | Clean second site | Same full candidate app SHA and stack as the conventional Bench | BLOCKED | Documentation-only rehearsal requires the designated host and second new site. No independent tester sign-off claimed. |
 | Separate Pilot-managed site | Pilot source `e5f590d1eb3b69541249ccc6db5fc6c1c625e60f`; same app/Frappe/ERPNext/runtime pins | BLOCKED | No designated separate Pilot host/site; source repository publication is authorized separately; the Pilot host is absent. Pilot has no observed latest release endpoint. |
 | Live synthetic CRM location | HighLevel current named API `Version: v3`; location-scoped Private Integration | BLOCKED | No designated synthetic UltimateSales location or approved secure credential entry; customer/chargeable automations must be disabled first. No account API request made. |
-| Remote CI | Immutable actions; standalone 3.12.14/3.14.0 matrix and separate installed-site definition | NOT RUN | Workflow files exist locally; no pushed repository or remote run is claimed. |
+| Remote CI | Offline and unchanged-rule security workflows triggered on published source; installed definition remains undispatched | IN PROGRESS when observed | Actual run URLs/source commit in PUBLICATION.md; no successful remote result claimed without confirmation. |
 
 ## Immutable upstream source baseline
 

@@ -1,0 +1,230 @@
+{
+  "doctype": "DocType",
+  "name": "US Connection",
+  "module": "UltimateSales Connector",
+  "custom": 0,
+  "autoname": "hash",
+  "engine": "InnoDB",
+  "track_changes": 0,
+  "allow_rename": 0,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "field_order": [
+    "setup_section",
+    "setup_checklist",
+    "connection_name",
+    "enabled",
+    "preview_only",
+    "routing_section",
+    "company",
+    "crm_currency",
+    "integration_user",
+    "location_id",
+    "pipeline_id",
+    "qualified_stage_id",
+    "credential_section",
+    "api_token",
+    "export_section",
+    "allow_quotation_export",
+    "export_contract_verified",
+    "field_opportunity",
+    "field_quotation",
+    "field_state",
+    "field_currency",
+    "field_total"
+  ],
+  "fields": [
+    {
+      "fieldname": "setup_section",
+      "fieldtype": "Section Break",
+      "label": "Setup and Safety"
+    },
+    {
+      "fieldname": "setup_checklist",
+      "fieldtype": "HTML",
+      "label": "Setup Checklist"
+    },
+    {
+      "fieldname": "connection_name",
+      "label": "Connection Name",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "enabled",
+      "label": "Enabled",
+      "fieldtype": "Check",
+      "default": "0",
+      "search_index": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "preview_only",
+      "label": "Preview Only",
+      "fieldtype": "Check",
+      "default": "1",
+      "description": "Requests remain previews. Previews perform CRM reads and create internal audit jobs; no ERP business records or CRM updates."
+    },
+    {
+      "fieldname": "routing_section",
+      "fieldtype": "Section Break",
+      "label": "Company, Operator and CRM Routing"
+    },
+    {
+      "fieldname": "company",
+      "label": "ERPNext Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 0,
+      "in_list_view": 1,
+      "mandatory_depends_on": "eval:doc.enabled"
+    },
+    {
+      "fieldname": "crm_currency",
+      "label": "CRM Location Currency",
+      "fieldtype": "Link",
+      "options": "Currency",
+      "reqd": 0,
+      "description": "Confirm the location currency manually. It must equal the company currency; no conversion is performed.",
+      "mandatory_depends_on": "eval:doc.enabled"
+    },
+    {
+      "fieldname": "integration_user",
+      "label": "Designated Restricted Operator",
+      "fieldtype": "Link",
+      "options": "User",
+      "reqd": 0,
+      "mandatory_depends_on": "eval:doc.enabled",
+      "description": "The sole user allowed to request and dispatch operations for this connection. Requires UltimateSales Operator plus normal ERP sales permissions; no System Manager role."
+    },
+    {
+      "fieldname": "location_id",
+      "label": "UltimateSales Location ID",
+      "fieldtype": "Data",
+      "reqd": 0,
+      "unique": 1,
+      "mandatory_depends_on": "eval:doc.enabled"
+    },
+    {
+      "fieldname": "pipeline_id",
+      "label": "Pipeline ID",
+      "fieldtype": "Data",
+      "reqd": 0,
+      "mandatory_depends_on": "eval:doc.enabled"
+    },
+    {
+      "fieldname": "qualified_stage_id",
+      "label": "Qualified Stage ID",
+      "fieldtype": "Data",
+      "reqd": 0,
+      "description": "Only OPEN opportunities in this exact stage can be imported for the first time.",
+      "mandatory_depends_on": "eval:doc.enabled"
+    },
+    {
+      "fieldname": "credential_section",
+      "fieldtype": "Section Break",
+      "label": "Credentials",
+      "permlevel": 1
+    },
+    {
+      "fieldname": "api_token",
+      "label": "Sub-account Private Integration Token",
+      "fieldtype": "Password",
+      "reqd": 0,
+      "no_copy": 1,
+      "print_hide": 1,
+      "description": "System Manager only. Enter or rotate the sub-account private integration token locally; never include it in chat, screenshots, logs or issue reports.",
+      "permlevel": 1,
+      "mandatory_depends_on": "eval:doc.enabled"
+    },
+    {
+      "fieldname": "export_section",
+      "label": "Quotation Return Path",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "allow_quotation_export",
+      "label": "Enable Quotation Export Intents",
+      "fieldtype": "Check",
+      "default": "0",
+      "description": "Submitted/cancelled quotation hooks queue a summary. Site write flag and Preview Only are additional write gates."
+    },
+    {
+      "fieldname": "export_contract_verified",
+      "label": "Staging Export Contract Verified",
+      "fieldtype": "Check",
+      "default": "0",
+      "description": "After a synthetic staging PUT/readback test, confirm that the five opportunity TEXT fields update while unrelated fields and native deal values are preserved. Test Connection alone cannot prove this."
+    },
+    {
+      "fieldname": "field_opportunity",
+      "label": "ERPNext Opportunity Reference \u2014 CRM Field ID",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "field_quotation",
+      "label": "Latest Quotation Reference \u2014 CRM Field ID",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "field_state",
+      "label": "Quotation Document State \u2014 CRM Field ID",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "field_currency",
+      "label": "Quotation Currency \u2014 CRM Field ID",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "field_total",
+      "label": "Quotation Grand Total \u2014 CRM Field ID",
+      "fieldtype": "Data"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "select": 1,
+      "create": 1,
+      "write": 1,
+      "delete": 1
+    },
+    {
+      "role": "System Manager",
+      "permlevel": 1,
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "UltimateSales Operator",
+      "read": 1,
+      "select": 1
+    },
+    {
+      "role": "UltimateSales Auditor",
+      "read": 1,
+      "select": 1
+    }
+  ],
+  "links": [
+    {
+      "link_doctype": "US Record Link",
+      "link_fieldname": "connection"
+    },
+    {
+      "link_doctype": "US Sync Job",
+      "link_fieldname": "connection"
+    }
+  ],
+  "actions": [],
+  "states": [],
+  "title_field": "connection_name",
+  "creation": "2026-10-12 00:00:00.000000",
+  "modified": "2026-10-12 00:00:00.000000",
+  "owner": "Administrator",
+  "modified_by": "Administrator"
+}

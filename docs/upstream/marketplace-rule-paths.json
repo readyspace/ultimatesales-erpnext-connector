@@ -1,0 +1,14 @@
+[
+  "validation/semgrep-rules/frappe-extra/code_quality.yml",
+  "validation/semgrep-rules/frappe-extra/report.yml",
+  "validation/semgrep-rules/frappe-extra/security/whitelisted.yml",
+  "validation/semgrep-rules/frappe-extra/translate.yml",
+  "validation/semgrep-rules/frappe-extra/ux.yml",
+  "validation/semgrep-rules/marketplace-security/correctness.yml",
+  "validation/semgrep-rules/marketplace-security/security/authorization.yml",
+  "validation/semgrep-rules/marketplace-security/security/command_execution.yml",
+  "validation/semgrep-rules/marketplace-security/security/filesystem.yml",
+  "validation/semgrep-rules/marketplace-security/security/format_string_injection.yml",
+  "validation/semgrep-rules/marketplace-security/security/rce.yml",
+  "validation/semgrep-rules/marketplace-security/security/sql.yml"
+]

@@ -1,0 +1,65 @@
+{
+  "recorded_at_utc": "2026-10-12T09:59:49.392163+00:00",
+  "timezone": "Asia/Singapore",
+  "candidate": "0.1.0a3",
+  "python": "3.12.14",
+  "node": "v22.23.1",
+  "checks": [
+    {
+      "check": "candidate-offline",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "<TEST_PYTHON>",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "artifact": "docs/evidence/candidate-offline.txt"
+    },
+    {
+      "check": "candidate-build",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "<TEST_PYTHON>",
+        "-m",
+        "build",
+        "--no-isolation",
+        "--outdir",
+        "/private/tmp/ultimatesales-0.1.0a3-prepublication-packages"
+      ],
+      "artifact": "docs/evidence/candidate-build.txt"
+    },
+    {
+      "check": "package-contents",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "<TEST_PYTHON>",
+        "tools/verify_package.py",
+        "/private/tmp/ultimatesales-0.1.0a3-prepublication-packages"
+      ],
+      "artifact": "docs/evidence/package-contents.txt"
+    },
+    {
+      "check": "python-syntax",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "<TEST_PYTHON>",
+        "-m",
+        "compileall",
+        "-q",
+        "ultimatesales_connector",
+        "tests",
+        "tools",
+        "tooling/environments"
+      ],
+      "artifact": "docs/evidence/python-syntax.txt"
+    }
+  ],
+  "security_scan_status": "PASS",
+  "security_blocking": 0,
+  "security_advisory": 43
+}

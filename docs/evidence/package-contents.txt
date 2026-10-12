@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "artifacts": [
+    {
+      "file": "ultimatesales_connector-0.1.0a3-py3-none-any.whl",
+      "sha256": "f3eb2d2ec215bb7066c9c16a7b23901daa45e78f70f6bc2e798ba417aeca57b2"
+    },
+    {
+      "file": "ultimatesales_connector-0.1.0a3.tar.gz",
+      "sha256": "dd6d2a3b46ad06ac7de1707870a9b0f8a321024d4a4c0283ce07eea6491cdb2e"
+    }
+  ]
+}

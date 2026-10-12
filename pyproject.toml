@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultimatesales_connector"
+version = "0.1.0a3"
+description = "A conservative sales-to-quotation connector for UltimateSales.ai and ERPNext"
+authors = [{name = "ReadySpace"}]
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "GPL-3.0-only"}
+dependencies = ["requests>=2.31,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "coverage>=7,<8"]
+
+[tool.setuptools.packages.find]
+include = ["ultimatesales_connector*"]
+
+[tool.setuptools.package-data]
+ultimatesales_connector = ["**/*.json", "**/*.js", "**/*.txt", "**/*.md"]
+
+# Alpha implementation target, NOT a verified compatibility certification.
+# The actual Frappe v16 environment must use Frappe's own Python requirements.
+[tool.bench.frappe-dependencies]
+frappe = ">=16.0.0,<17.0.0"
+erpnext = ">=16.0.0,<17.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["ultimatesales_connector.domain", "ultimatesales_connector.client"]
+
+[tool.coverage.report]
+show_missing = true

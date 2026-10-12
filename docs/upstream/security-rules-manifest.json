@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/frappe/marketplace",
+  "commit": "cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a",
+  "source_prefix": "validation/semgrep-rules/",
+  "files": [
+    {
+      "path": "frappe-extra/code_quality.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/code_quality.yml",
+      "sha256": "50406a71656e54d3840b5757e5f8db435f3c576f71cc2eaa06a6c1d9b3de9e07"
+    },
+    {
+      "path": "frappe-extra/report.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/report.yml",
+      "sha256": "9603dd9b751d3db14999f0a8516c0bdcbf5faf45622d674a891ab2197859ece5"
+    },
+    {
+      "path": "frappe-extra/security/whitelisted.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/security/whitelisted.yml",
+      "sha256": "ffc065401f10aa5e424fc8689b90b02e71a09ff258b8bd7354acd7d7695d2b27"
+    },
+    {
+      "path": "frappe-extra/translate.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/translate.yml",
+      "sha256": "ea8560f305810f69c0c6bdfc2e079f565f0a7b2d0bf9fc3904c2eb246af2ce99"
+    },
+    {
+      "path": "frappe-extra/ux.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/ux.yml",
+      "sha256": "b8f42126483ec70341a8928b9768440e43dd9061a15d923ef4fb667f7fd62e3a"
+    },
+    {
+      "path": "marketplace-security/correctness.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/correctness.yml",
+      "sha256": "0530f1179740993ce5541a3c0757d0303608c593a43f1d5bb90b65d006682df2"
+    },
+    {
+      "path": "marketplace-security/security/authorization.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/authorization.yml",
+      "sha256": "052b4edb97e08fc316f514adf48b869798d2f93e750e3d7d0bc0e3ea22a1c3f7"
+    },
+    {
+      "path": "marketplace-security/security/command_execution.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/command_execution.yml",
+      "sha256": "cab1e331552c14a855ffdbb93239088c45d054559a54d11773e08906ebebdfba"
+    },
+    {
+      "path": "marketplace-security/security/filesystem.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/filesystem.yml",
+      "sha256": "d137f9c03758d7542b428bd975fe9b71d5db152e38831dc82391ac18253d334c"
+    },
+    {
+      "path": "marketplace-security/security/format_string_injection.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/format_string_injection.yml",
+      "sha256": "bad005ef7cf0f4cb9e2e7e28c1a7a7b58c05368000864c8dadd6d8b9e3828c40"
+    },
+    {
+      "path": "marketplace-security/security/rce.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/rce.yml",
+      "sha256": "380b44755b94c4ccfbed6f147dea4754c3b986bf6e205cf40775429efacf5d0a"
+    },
+    {
+      "path": "marketplace-security/security/sql.yml",
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/sql.yml",
+      "sha256": "bd8adf04cbdf7350cfa18e7e11a5858faad32ce409db0b623dbe42ec388e5a00"
+    }
+  ]
+}

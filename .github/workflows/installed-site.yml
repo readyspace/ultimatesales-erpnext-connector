@@ -1,0 +1,63 @@
+name: Isolated installed-site acceptance
+on:
+  workflow_dispatch:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  bench-install:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    services:
+      mariadb:
+        image: mariadb:11.8.3@sha256:ae6119716edac6998ae85508431b3d2e666530ddf4e94c61a10710caec9b0f71
+        env:
+          # Disposable job-only database bound to runner loopback; no saved secret.
+          MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
+        ports:
+          - 127.0.0.1:3306:3306
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=10s --health-timeout=5s --health-retries=20
+      redis:
+        image: redis:7.2.6@sha256:43c5c111b5b63afce26faea67198f8cf7e63b941460bcfe1525b68a6ad1eef92
+        ports:
+          - 127.0.0.1:6379:6379
+        options: >-
+          --health-cmd="redis-cli ping"
+          --health-interval=10s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.14.0'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.12.0'
+      - name: Provision isolated tool dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git pkg-config libmariadb-dev mariadb-client libjpeg-dev zlib1g-dev libffi-dev libssl-dev
+          python -m pip install pip==25.3
+          python -m pip install 'git+https://github.com/frappe/bench.git@f21f11793872705560e710b2bda69934c9c34011'
+          npm install --global yarn@1.22.22
+          mariadb --host=127.0.0.1 --user=root -e "SET GLOBAL character_set_server='utf8mb4'; SET GLOBAL collation_server='utf8mb4_unicode_ci';"
+      - name: Install the exact candidate on two clean sites and test
+        env:
+          US_DISPOSABLE_ENV: '1'
+          US_CI_EMPTY_DB_ROOT: '1'
+          US_PYTHON_BIN: python
+          US_ACCEPTANCE_ROOT: ${{ runner.temp }}/ultimatesales-bench
+        run: |
+          export US_APP_SHA="$(git rev-parse HEAD)"
+          bash tooling/environments/bench-acceptance.sh
+      - name: Preserve sanitized runtime provenance
+        if: success()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: installed-site-runtime-provenance
+          path: ${{ runner.temp }}/ultimatesales-bench/acceptance-evidence/
+          retention-days: 7

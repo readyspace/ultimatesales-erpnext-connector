@@ -1,0 +1,442 @@
+{
+  "verified_at_utc": "2026-10-12T09:15:12.107438+00:00",
+  "evidence_kind": "read-only official public metadata/source/documentation; no installed-site or live-account evidence",
+  "stable_v16_releases": [
+    {
+      "component": "frappe",
+      "tag": "v16.51.1",
+      "commit": "2871914b69b6e14a4b023d9b7cc52dc3e269cc1b",
+      "published_at": "2026-10-11T12:22:26Z",
+      "source_url": "https://github.com/frappe/frappe/releases/tag/v16.51.1"
+    },
+    {
+      "component": "erpnext",
+      "tag": "v16.50.0",
+      "commit": "7474d9e786277383de1242ab882f16856d17a9c9",
+      "published_at": "2026-10-06T13:44:40Z",
+      "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.50.0"
+    },
+    {
+      "component": "bench",
+      "tag": "v5.31.0",
+      "commit": "f21f11793872705560e710b2bda69934c9c34011",
+      "published_at": "2026-06-16T16:24:55Z",
+      "source_url": "https://github.com/frappe/bench/releases/tag/v5.31.0"
+    }
+  ],
+  "global_erpnext_latest_observed": "v15.122.0",
+  "pilot": {
+    "commit": "e5f590d1eb3b69541249ccc6db5fc6c1c625e60f",
+    "release_endpoint": "404; no latest release observed"
+  },
+  "marketplace_validator": {
+    "commit": "cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a",
+    "setuser_rule": "WARNING; internal-only; no is_blocking; test_*.py excluded",
+    "blocking_logic": "explicit is_blocking true or ERROR/CRITICAL/HIGH severity",
+    "readme_conflict": "README calls set_user blocking; actual rule and validator make this finding advisory"
+  },
+  "press_comparator_commit": "a67a08425797e8910a2a60b10ca053c62192ac4d",
+  "ci_actions": {
+    "checkout": "11d5960a326750d5838078e36cf38b85af677262",
+    "setup-python": "a26af69be951a213d495a4c3e4e4022e16d87065",
+    "setup-node": "49933ea5288caeca8642d1e84afbd3f7d6820020",
+    "upload-artifact": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+  },
+  "selected_runtime_artifacts": {
+    "python": "3.14.0",
+    "node": "24.12.0",
+    "yarn": "1.22.22",
+    "pip": "25.3",
+    "note": "Exact verified artifact choices, no latest-patch or execution claim"
+  },
+  "downloads": [
+    {
+      "url": "https://api.github.com/repos/actions/checkout/git/ref/tags/v4",
+      "sha256": "0e0d0221da3ca1eb3d4d476cdb6bd8d055c386867b2183cec8d97689ec2c207b",
+      "retained_path": null
+    },
+    {
+      "url": "https://api.github.com/repos/actions/setup-node/git/ref/tags/v4",
+      "sha256": "b58264d4a570f86a08e54b6a00da4873db50f56b8c0899e20f8814b052d076c0",
+      "retained_path": null
+    },
+    {
+      "url": "https://api.github.com/repos/actions/setup-python/git/ref/tags/v5",
+      "sha256": "f7565f66e7c1162fd36ecbcb92c72c018af33dabf2c431419ee046b81a6a410a",
+      "retained_path": null
+    },
+    {
+      "url": "https://api.github.com/repos/actions/upload-artifact/git/ref/tags/v4",
+      "sha256": "c3573de14d72214239a55ed86c70a88f3c7d0d2005c977be63a38f868f7668df",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/bench/f21f11793872705560e710b2bda69934c9c34011/bench/app.py",
+      "sha256": "6e226313f9f93e225623e623db93a29077a241d3cffe65390df790e8e63c4e80",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/bench-app.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/bench/f21f11793872705560e710b2bda69934c9c34011/bench/commands/make.py",
+      "sha256": "ff4f5bcda3f9f6624880ded06ce946abc7afdaf89e212c6f62e1590e69ac41c8",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/bench-make.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/bench/releases/latest",
+      "sha256": "ac217d75785544ffbeca265f9dc0ea1c277b3096ee153e1d1f4847df0ef47431",
+      "retained_path": null
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/bench/git/ref/tags/v5.31.0",
+      "sha256": "1671cff88d6275894572288ba56c9b36722316027204e3203b142c1a1e11b3c7",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/erpnext/7474d9e786277383de1242ab882f16856d17a9c9/erpnext/hooks.py",
+      "sha256": "28c286e338e7e28cdc8d23cc2168d52251da49c012c21de64d839d484be5c310",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/erpnext-hooks.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/erpnext/7474d9e786277383de1242ab882f16856d17a9c9/license.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/erpnext-license.txt",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/erpnext/7474d9e786277383de1242ab882f16856d17a9c9/pyproject.toml",
+      "sha256": "3ddc835e995322c4952413613be8695e198bbd9ebd2f6fcf46556eb8b6d72bc3",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/erpnext-pyproject.toml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/erpnext/releases/latest",
+      "sha256": "d76cbedbe7e7b7a8bfa7e9042f240c48138fd906199fa023b3550e6f9d8c4ac0",
+      "retained_path": null
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/erpnext/releases?per_page=30",
+      "sha256": "d3f25a124f340d30ed6dd3414341664bc48f2f00bd8fcab7de3e9295ed13221f",
+      "retained_path": null
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/erpnext/git/ref/tags/v16.50.0",
+      "sha256": "74ef3d6f483841efb46316e7c6c20bd6815655135296b92cee59736df46c5d6d",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/utils/background_jobs.py",
+      "sha256": "45d721dbb4efb0b609831f2e578c219aba4d1010faa35a9672d41e4e978568bc",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-background_jobs.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/model/db_query.py",
+      "sha256": "36960ef1046eed8e32b16f1267a0c7f48d3fea40705ec3873784e5ffc4b2f03a",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-db_query.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/LICENSE",
+      "sha256": "bc6001a54ffcc4ab520424d7dbb85b293578efcdcb7d8f8055e00dddf942e5d7",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-license.txt",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/package.json",
+      "sha256": "6e23add318448ac0300d5b41d4a32cfb2f46ce6c7845f16d726d2dc862f49708",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-package.json",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/permissions.py",
+      "sha256": "ae3c1285b87094fef39c27c4a5f73c258da11f955ce45169ca6b4996558f6bd8",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-permissions.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/pyproject.toml",
+      "sha256": "90ed444a340c0246975e8e8eb993da0770ac75f2f0ab7b06a77d988750f11c8e",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-pyproject.toml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/frappe/releases/latest",
+      "sha256": "0347f6c94526900a858bebb77bff4fb4a5d2ad9f9f49bd5bf0a160d6a3271fdd",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/commands/site.py",
+      "sha256": "b55271046012ebf6890ccc165ec7cc714dbec4dd0a67fb535f38bf2f5e69050b",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-site-commands.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/frappe/git/ref/tags/v16.51.1",
+      "sha256": "90c2fa5697dd557fbaabca196e73d61c907a06686643bb600d5c7da18b177bf8",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/frappe/2871914b69b6e14a4b023d9b7cc52dc3e269cc1b/frappe/commands/utils.py",
+      "sha256": "8b50daf9e30b5eb4f3767e4a3838720cfeac7872c242b1c4e06bf0714aaf32b2",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/frappe-utils-commands.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/locations/get-custom-fields/index.html",
+      "sha256": "5312bec7506de15c510e44da12af1eb0c73251d72758145e551e72fab1cf4600",
+      "retained_path": null
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/opportunities/get-pipeline/",
+      "sha256": "e83661390bd013eeda789d92d9d63ac45f0a09bfc59fc96fa7df888e32ca2964",
+      "retained_path": null
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/opportunities/get-pipelines/index.html",
+      "sha256": "6253af58dfc3db4d281617692d4093d6cde279fcb639a0e7d44d8a395d4c3070",
+      "retained_path": null
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/Scopes/index.html",
+      "sha256": "eaae8cee215a103d9759f139ec95c36699531b50f4b2c15a6e3c8ffa65813792",
+      "retained_path": null
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/ghl/opportunities/update-opportunity/index.html",
+      "sha256": "c6993d81d4b98285e9392435735e9e9d04d6bc241c5c49873142da89db6e90f0",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/authorization.yml",
+      "sha256": "052b4edb97e08fc316f514adf48b869798d2f93e750e3d7d0bc0e3ea22a1c3f7",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/marketplace-authorization.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/marketplace/commits/main",
+      "sha256": "0c02043544b3b6e5d17e7259967a3c655c755808cfcd940c891949b5c4af94b8",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep_check.py",
+      "sha256": "f75bf526c8416b592bc875dd52d1009d3a46467c523b2ef98191a087e4e75485",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/marketplace-semgrep-check.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://nodejs.org/dist/v24.12.0/SHASUMS256.txt",
+      "sha256": "379ddb0712938bd5f318b3c6235594478e02894f03b0a82343ac9d704e254e57",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/node-release.json",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/core/app/repository.py",
+      "sha256": "8131296a87ae22a65a4def6c3e69c1dbaeb2e9d1cb2f337d80018bc6f4ed03d8",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-app-repository.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/docs/commands.md",
+      "sha256": "31deade4f582aa4f422660eb71fb5e53b50503c3c25c0176a26946f7566830b4",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-commands.md",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/docs/configuration.md",
+      "sha256": "fbfb6b85861906bc300ad0ff7fdf9f82e00d6e4e5e550de5a5c9276db7e846f8",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-configuration.md",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/core/app/__init__.py",
+      "sha256": "77805a0628d0c7ca2019b2f647439545290e87d6ffea525a48af2876c8210c01",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-core-app.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/pilot/commits/develop",
+      "sha256": "32291d2e958ebcc0a8622d5e1adf4e5f22816d2d1c7de949185d1991b57bce79",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/commands/apps/download.py",
+      "sha256": "e47a286529b97951b7bbb9ea57cfef4d88a8260edbd66d3a46f7e2dec7b0b843",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-download-command.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/commands/runtime/frappe.py",
+      "sha256": "b9b0b1711470005190f29d7fc4e1f71f0525a5b2b12c40a80a07199cac6e0ba9",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-frappe-command.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/tasks/get_app.py",
+      "sha256": "1a9307dabc078c82cad3e7b1531630be24e8bdeadda79ba648a8a6cc312c16ce",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-get-app-task.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/commands/bench/initialize.py",
+      "sha256": "df9a52ebf396b0312310e10cfa9ac61304d3b192df7f41b96621f0f5a1186f42",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-initialize-command.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/commands/apps/install.py",
+      "sha256": "5b4e459dfcc18949770788e865775ca0b836edc14af448bdea48ec7451ee81e7",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-install-command.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pyproject.toml",
+      "sha256": "e774bc13202f6e68c8ea6f682c6d9120e149a2efe9bac9367e466ef2ba20c7b2",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-pyproject.toml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/pilot/e5f590d1eb3b69541249ccc6db5fc6c1c625e60f/pilot/core/app/validator/frappe_compatibility.py",
+      "sha256": "82fdcb9f7f4671edfc036a3dee38a3beb2ad1424c65420bf07f250a2662220f7",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/pilot-version-validator.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/press/a67a08425797e8910a2a60b10ca053c62192ac4d/press/marketplace/doctype/marketplace_app_audit/checks/semgrep-rules/security/authorization.yml",
+      "sha256": "052b4edb97e08fc316f514adf48b869798d2f93e750e3d7d0bc0e3ea22a1c3f7",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/press-authorization.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://api.github.com/repos/frappe/press/commits/develop",
+      "sha256": "4b404c51a61a3b8aa86823b8ac62ad1586f093b411bb99b0da100423628e4b17",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/press/a67a08425797e8910a2a60b10ca053c62192ac4d/press/marketplace/doctype/marketplace_app_audit/checks/semgrep_rules.py",
+      "sha256": "8b91e10f75063fba6dd5253ca78c020b63e257b569e63df2ff3667b1badafdfa",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/raw/press-semgrep_rules.py",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://www.python.org/downloads/release/python-3140/",
+      "sha256": "25e83ce33b226612c8cab6337642ecfa19c367e606aa0d3e65db5b0bc072a8ec",
+      "retained_path": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/report.yml",
+      "sha256": "9603dd9b751d3db14999f0a8516c0bdcbf5faf45622d674a891ab2197859ece5",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/frappe-extra/report.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/ux.yml",
+      "sha256": "b8f42126483ec70341a8928b9768440e43dd9061a15d923ef4fb667f7fd62e3a",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/frappe-extra/ux.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/code_quality.yml",
+      "sha256": "50406a71656e54d3840b5757e5f8db435f3c576f71cc2eaa06a6c1d9b3de9e07",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/frappe-extra/code_quality.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/translate.yml",
+      "sha256": "ea8560f305810f69c0c6bdfc2e079f565f0a7b2d0bf9fc3904c2eb246af2ce99",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/frappe-extra/translate.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/correctness.yml",
+      "sha256": "0530f1179740993ce5541a3c0757d0303608c593a43f1d5bb90b65d006682df2",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/correctness.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/frappe-extra/security/whitelisted.yml",
+      "sha256": "ffc065401f10aa5e424fc8689b90b02e71a09ff258b8bd7354acd7d7695d2b27",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/frappe-extra/security/whitelisted.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/authorization.yml",
+      "sha256": "052b4edb97e08fc316f514adf48b869798d2f93e750e3d7d0bc0e3ea22a1c3f7",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/security/authorization.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/format_string_injection.yml",
+      "sha256": "bad005ef7cf0f4cb9e2e7e28c1a7a7b58c05368000864c8dadd6d8b9e3828c40",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/security/format_string_injection.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/rce.yml",
+      "sha256": "380b44755b94c4ccfbed6f147dea4754c3b986bf6e205cf40775429efacf5d0a",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/security/rce.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/filesystem.yml",
+      "sha256": "d137f9c03758d7542b428bd975fe9b71d5db152e38831dc82391ac18253d334c",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/security/filesystem.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/sql.yml",
+      "sha256": "bd8adf04cbdf7350cfa18e7e11a5858faad32ce409db0b623dbe42ec388e5a00",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/security/sql.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/frappe/marketplace/cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a/validation/semgrep-rules/marketplace-security/security/command_execution.yml",
+      "sha256": "cab1e331552c14a855ffdbb93239088c45d054559a54d11773e08906ebebdfba",
+      "retained_path": null,
+      "local_reference_path": ".reference-source/marketplace/validation/semgrep-rules/marketplace-security/security/command_execution.yml",
+      "public_distribution": "Immutable URL/hash only; source cache is local and ignored"
+    }
+  ],
+  "reference_publication_policy": "Third-party downloaded sources/rules remain local only; public source includes provenance and fetches unchanged pinned rules when requested."
+}

@@ -1,0 +1,495 @@
+{
+  "recorded_at_utc": "2026-10-12T09:58:55.262378+00:00",
+  "status": "PASS",
+  "scanner_version": "1.156.0",
+  "scanner_exit_code": 0,
+  "validator_repository": "https://github.com/frappe/marketplace",
+  "validator_commit": "cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a",
+  "command": [
+    "semgrep",
+    "scan",
+    "--config",
+    "<VERIFIED_PINNED_RULES>",
+    "--json",
+    "--quiet",
+    "--metrics=off",
+    "--disable-version-check",
+    "--no-git-ignore",
+    "ultimatesales_connector",
+    "ultimatesales_connector/tests/acceptance_support.py",
+    "ultimatesales_connector/tests/test_install_contract.py",
+    "ultimatesales_connector/tests/test_native_queue.py",
+    "ultimatesales_connector/tests/test_permissions_recovery.py"
+  ],
+  "targets": [
+    "ultimatesales_connector",
+    "ultimatesales_connector/tests/acceptance_support.py",
+    "ultimatesales_connector/tests/test_install_contract.py",
+    "ultimatesales_connector/tests/test_native_queue.py",
+    "ultimatesales_connector/tests/test_permissions_recovery.py"
+  ],
+  "source_stable_during_scan": true,
+  "missing_explicit_test_targets": [],
+  "scanned_file_count": 29,
+  "finding_count": 43,
+  "blocking_count": 0,
+  "production_blocking_count": 0,
+  "test_only_blocking_count": 0,
+  "errors": [],
+  "findings": [
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/access.py",
+      "line": 28,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 25,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 28,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 47,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 60,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 68,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 70,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 72,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 82,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 90,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 100,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/api.py",
+      "line": 112,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/events.py",
+      "line": 21,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/install.py",
+      "line": 10,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/install.py",
+      "line": 12,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/install.py",
+      "line": 14,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/install.py",
+      "line": 16,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/install.py",
+      "line": 18,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-setuser",
+      "path": "ultimatesales_connector/tests/acceptance_support.py",
+      "line": 191,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": true,
+      "internal_only": true
+    },
+    {
+      "rule": "frappe-setuser",
+      "path": "ultimatesales_connector/tests/acceptance_support.py",
+      "line": 203,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": true,
+      "internal_only": true
+    },
+    {
+      "rule": "frappe-setuser",
+      "path": "ultimatesales_connector/tests/acceptance_support.py",
+      "line": 254,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": true,
+      "internal_only": true
+    },
+    {
+      "rule": "frappe-setuser",
+      "path": "ultimatesales_connector/tests/acceptance_support.py",
+      "line": 307,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": true,
+      "internal_only": true
+    },
+    {
+      "rule": "frappe-setuser",
+      "path": "ultimatesales_connector/tests/acceptance_support.py",
+      "line": 316,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": true,
+      "internal_only": true
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 11,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 13,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 27,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 30,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 33,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 35,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 39,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 41,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 48,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 51,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 56,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py",
+      "line": 60,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py",
+      "line": 11,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py",
+      "line": 16,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py",
+      "line": 18,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py",
+      "line": 20,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py",
+      "line": 22,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py",
+      "line": 25,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_sync_job/us_sync_job.py",
+      "line": 12,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    },
+    {
+      "rule": "frappe-missing-translate-function-python",
+      "path": "ultimatesales_connector/ultimatesales_connector/doctype/us_sync_job/us_sync_job.py",
+      "line": 15,
+      "severity": "WARNING",
+      "blocking": false,
+      "test_only": false,
+      "internal_only": false
+    }
+  ],
+  "scanned_file_sha256": {
+    "ultimatesales_connector/__init__.py": "b3d34be4c15bd700bd0e5049c1b99b10dc6c9af692b8cdff66d3c7500604ef0c",
+    "ultimatesales_connector/access.py": "2901e933ff2a710841e9c60bc994400ea8cde87d8b8831852e78d0666dbf905d",
+    "ultimatesales_connector/api.py": "7182b090a969de36ee05d23e93812c326c324d252f10833c4f0827d0b7844ba7",
+    "ultimatesales_connector/client.py": "c057938366ee4d22190b681a548acabc9c3c39a721bc273f22b30d8b059d6342",
+    "ultimatesales_connector/domain.py": "914aa10054d887ee90466b01ceb560d8888457a7cbb55ad3b38ae6dab6f77dcc",
+    "ultimatesales_connector/events.py": "6faafc6f8d9216cc9a7703084eec448356b0520b7aa1466c851d840aa4a808b1",
+    "ultimatesales_connector/hooks.py": "40d75d0714aaefc8286be95461087fe2d5c8b6b490c0a805e56a4df938ed7c3b",
+    "ultimatesales_connector/install.py": "484b59db3ecc113a7622cb615b1b3d681afa0c4d058576e4ee2a0568023dd018",
+    "ultimatesales_connector/jobs.py": "5eb0daa3d547bcb39aa35eaa241e272d60958c19f375bd1e8624fa61fa4cc4b2",
+    "ultimatesales_connector/service.py": "3791f4444819b9139a5e3f72f19881c6015ccf733a10547edd2a4f3fdfa2c8fa",
+    "ultimatesales_connector/setup.py": "2b6d9f77bb33cdcb3b0109019873e5d56d06ffa391e6d686eb4367b612ec030b",
+    "ultimatesales_connector/tests/acceptance_support.py": "d3ee78ef4499434079f1b96bf4f573c779d2af5f1123bc4a8e5ee868fe5699f3",
+    "ultimatesales_connector/tests/test_install_contract.py": "934cac85edf870e9fab5d8a24e8586ccd3770360c77a38d85601dc2c50c4fd4a",
+    "ultimatesales_connector/tests/test_native_queue.py": "0792c54984b625639df9c6f020191655b8e46a5ca62691dd64c11b02a0da94f3",
+    "ultimatesales_connector/tests/test_permissions_recovery.py": "07b61a132c04ed9428640687118b01ce427ed3bc4c92f542b10cee7f54e04fac",
+    "ultimatesales_connector/ultimatesales_connector/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ultimatesales_connector/ultimatesales_connector/doctype/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.js": "3181d310b80cf83d0802350c1315469fc1fc970579adc65cafdd1a8066408605",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.json": "58cdb36dbf2caa6339d0ce544d8496bcadd8844364eacd07597170f59271f855",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_connection/us_connection.py": "b560bc311de195efdada38e49ad59951008b2019b66114b40e41033eb3d91ef3",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.json": "482067aeb2350df801a0099ecf030aaa27083dcac50c5a1726136b70e50199cb",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_record_link/us_record_link.py": "8deed2b31728b6c10989b74f7b6e3177b5dc5dbf51bc011c32833daaaa7b86c2",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_sync_job/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_sync_job/us_sync_job.js": "6c185253babbbee91c049dbc4554d074d15416dd86802233ad601dc4ac1e7ad2",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_sync_job/us_sync_job.json": "2d6f4a37c62b611494ea682101403bca15f9799717a93c93ff80611964461058",
+    "ultimatesales_connector/ultimatesales_connector/doctype/us_sync_job/us_sync_job.py": "605474c9a5cf6804c50404dbd3c3c841a4024212e4606f266c41ff5481b59aa0",
+    "ultimatesales_connector/ultimatesales_connector/workspace/ultimatesales_connector/ultimatesales_connector.json": "661eaa8bdfca36562f8a4af60c63adeb7d9a31c69b7580d05519d488d31a7eed"
+  },
+  "rules_sha256": {
+    "frappe-extra/report.yml": "9603dd9b751d3db14999f0a8516c0bdcbf5faf45622d674a891ab2197859ece5",
+    "frappe-extra/ux.yml": "b8f42126483ec70341a8928b9768440e43dd9061a15d923ef4fb667f7fd62e3a",
+    "frappe-extra/code_quality.yml": "50406a71656e54d3840b5757e5f8db435f3c576f71cc2eaa06a6c1d9b3de9e07",
+    "frappe-extra/translate.yml": "ea8560f305810f69c0c6bdfc2e079f565f0a7b2d0bf9fc3904c2eb246af2ce99",
+    "marketplace-security/correctness.yml": "0530f1179740993ce5541a3c0757d0303608c593a43f1d5bb90b65d006682df2",
+    "frappe-extra/security/whitelisted.yml": "ffc065401f10aa5e424fc8689b90b02e71a09ff258b8bd7354acd7d7695d2b27",
+    "marketplace-security/security/authorization.yml": "052b4edb97e08fc316f514adf48b869798d2f93e750e3d7d0bc0e3ea22a1c3f7",
+    "marketplace-security/security/format_string_injection.yml": "bad005ef7cf0f4cb9e2e7e28c1a7a7b58c05368000864c8dadd6d8b9e3828c40",
+    "marketplace-security/security/rce.yml": "380b44755b94c4ccfbed6f147dea4754c3b986bf6e205cf40775429efacf5d0a",
+    "marketplace-security/security/filesystem.yml": "d137f9c03758d7542b428bd975fe9b71d5db152e38831dc82391ac18253d334c",
+    "marketplace-security/security/sql.yml": "bd8adf04cbdf7350cfa18e7e11a5858faad32ce409db0b623dbe42ec388e5a00",
+    "marketplace-security/security/command_execution.yml": "cab1e331552c14a855ffdbb93239088c45d054559a54d11773e08906ebebdfba"
+  },
+  "verified_rules_sha256_after_scan": {
+    "frappe-extra/report.yml": "9603dd9b751d3db14999f0a8516c0bdcbf5faf45622d674a891ab2197859ece5",
+    "frappe-extra/ux.yml": "b8f42126483ec70341a8928b9768440e43dd9061a15d923ef4fb667f7fd62e3a",
+    "frappe-extra/code_quality.yml": "50406a71656e54d3840b5757e5f8db435f3c576f71cc2eaa06a6c1d9b3de9e07",
+    "frappe-extra/translate.yml": "ea8560f305810f69c0c6bdfc2e079f565f0a7b2d0bf9fc3904c2eb246af2ce99",
+    "marketplace-security/correctness.yml": "0530f1179740993ce5541a3c0757d0303608c593a43f1d5bb90b65d006682df2",
+    "frappe-extra/security/whitelisted.yml": "ffc065401f10aa5e424fc8689b90b02e71a09ff258b8bd7354acd7d7695d2b27",
+    "marketplace-security/security/authorization.yml": "052b4edb97e08fc316f514adf48b869798d2f93e750e3d7d0bc0e3ea22a1c3f7",
+    "marketplace-security/security/format_string_injection.yml": "bad005ef7cf0f4cb9e2e7e28c1a7a7b58c05368000864c8dadd6d8b9e3828c40",
+    "marketplace-security/security/rce.yml": "380b44755b94c4ccfbed6f147dea4754c3b986bf6e205cf40775429efacf5d0a",
+    "marketplace-security/security/filesystem.yml": "d137f9c03758d7542b428bd975fe9b71d5db152e38831dc82391ac18253d334c",
+    "marketplace-security/security/sql.yml": "bd8adf04cbdf7350cfa18e7e11a5858faad32ce409db0b623dbe42ec388e5a00",
+    "marketplace-security/security/command_execution.yml": "cab1e331552c14a855ffdbb93239088c45d054559a54d11773e08906ebebdfba"
+  },
+  "rules_manifest": "docs/upstream/security-rules-manifest.json",
+  "unchanged_pinned_rules_verified": true,
+  "rules_verification_errors": [],
+  "limitations": [
+    "Static local scan only; no Marketplace submission/reviewer approval.",
+    "No installed-site permission, live-account or worker execution evidence.",
+    "TOML metadata is checked separately by packaging and upstream dependency validators."
+  ]
+}

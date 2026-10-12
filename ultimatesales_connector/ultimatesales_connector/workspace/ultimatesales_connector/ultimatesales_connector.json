@@ -1,0 +1,64 @@
+{
+  "doctype": "Workspace",
+  "name": "UltimateSales Connector",
+  "label": "UltimateSales Connector",
+  "title": "UltimateSales Connector",
+  "module": "UltimateSales Connector",
+  "public": 1,
+  "is_hidden": 0,
+  "sequence_id": 30,
+  "icon": "link",
+  "type": "Workspace",
+  "content": "[{\"id\":\"us-title\",\"type\":\"header\",\"data\":{\"text\":\"<b>UltimateSales Connector</b>\",\"col\":12}},{\"id\":\"us-intro\",\"type\":\"paragraph\",\"data\":{\"text\":\"Configure one CRM location and ERP company. Start disabled with Preview Only on; use synthetic staging data. Business writes need the separate site write gate.\",\"col\":12}},{\"id\":\"us-checklist\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Setup order:</b> supported stack and long worker \\u2192 company/currency and restricted operator \\u2192 location/pipeline/qualified stage and private token \\u2192 read-only checks \\u2192 operator preview and explicit dispatch \\u2192 approved write enablement \\u2192 optional five quotation TEXT fields. Open a Connection for the full checklist and diagnostics.\",\"col\":12}},{\"id\":\"us-admin\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings and Operations\",\"col\":6}},{\"id\":\"us-audit\",\"type\":\"card\",\"data\":{\"card_name\":\"Links and Diagnostics\",\"col\":6}},{\"id\":\"us-identity\",\"type\":\"paragraph\",\"data\":{\"text\":\"System Managers configure settings and secrets. The designated UltimateSales Operator requests and dispatches their own jobs using normal ERP permissions. UltimateSales Auditors have company-scoped read-only diagnostics. No full CRM, invoicing or payment posting.\",\"col\":12}}]",
+  "links": [
+    {
+      "type": "Card Break",
+      "label": "Settings and Operations",
+      "link_count": 1
+    },
+    {
+      "type": "Link",
+      "label": "Connections / Settings",
+      "link_to": "US Connection",
+      "link_type": "DocType",
+      "onboard": 0
+    },
+    {
+      "type": "Card Break",
+      "label": "Links and Diagnostics",
+      "link_count": 2
+    },
+    {
+      "type": "Link",
+      "label": "Linked Records",
+      "link_to": "US Record Link",
+      "link_type": "DocType",
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Sync Jobs",
+      "link_to": "US Sync Job",
+      "link_type": "DocType",
+      "onboard": 0
+    }
+  ],
+  "roles": [
+    {
+      "role": "System Manager"
+    },
+    {
+      "role": "UltimateSales Operator"
+    },
+    {
+      "role": "UltimateSales Auditor"
+    }
+  ],
+  "charts": [],
+  "shortcuts": [],
+  "number_cards": [],
+  "quick_lists": [],
+  "custom_blocks": [],
+  "for_user": "",
+  "parent_page": ""
+}

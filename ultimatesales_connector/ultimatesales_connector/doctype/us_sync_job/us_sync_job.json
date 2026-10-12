@@ -1,0 +1,148 @@
+{
+  "doctype": "DocType",
+  "name": "US Sync Job",
+  "module": "UltimateSales Connector",
+  "custom": 0,
+  "autoname": "field:job_key",
+  "engine": "InnoDB",
+  "track_changes": 0,
+  "allow_rename": 0,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "field_order": [
+    "job_key",
+    "connection",
+    "operation",
+    "reference",
+    "preview_only",
+    "status",
+    "attempts",
+    "next_attempt",
+    "completed_on",
+    "requested_by",
+    "error_code",
+    "result_summary",
+    "configuration_key"
+  ],
+  "fields": [
+    {
+      "fieldname": "job_key",
+      "label": "Job Key",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "read_only": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "connection",
+      "label": "Connection",
+      "fieldtype": "Link",
+      "options": "US Connection",
+      "reqd": 1,
+      "in_list_view": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "operation",
+      "label": "Operation",
+      "fieldtype": "Select",
+      "options": "Import Opportunity\nPublish Quotation",
+      "reqd": 1,
+      "in_list_view": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "reference",
+      "label": "Source Record Reference",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "preview_only",
+      "label": "Requested as Preview",
+      "fieldtype": "Check",
+      "default": "1",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Queued\nProcessing\nRetry\nSucceeded\nPreview\nBlocked\nFailed",
+      "default": "Queued",
+      "in_list_view": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "attempts",
+      "label": "Attempts",
+      "fieldtype": "Int",
+      "default": "0",
+      "read_only": 1
+    },
+    {
+      "fieldname": "next_attempt",
+      "label": "Next Attempt",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "completed_on",
+      "label": "Completed On",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "requested_by",
+      "label": "Requested By",
+      "fieldtype": "Link",
+      "options": "User",
+      "read_only": 1
+    },
+    {
+      "fieldname": "error_code",
+      "label": "Error Code",
+      "fieldtype": "Data",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "result_summary",
+      "label": "Result",
+      "fieldtype": "Small Text",
+      "read_only": 1
+    },
+    {
+      "fieldname": "configuration_key",
+      "label": "Configuration Fingerprint",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "select": 1
+    },
+    {
+      "role": "UltimateSales Operator",
+      "read": 1,
+      "select": 1
+    },
+    {
+      "role": "UltimateSales Auditor",
+      "read": 1,
+      "select": 1
+    }
+  ],
+  "links": [],
+  "actions": [],
+  "states": [],
+  "creation": "2026-10-12 00:00:00.000000",
+  "modified": "2026-10-12 00:00:00.000000",
+  "owner": "Administrator",
+  "modified_by": "Administrator"
+}

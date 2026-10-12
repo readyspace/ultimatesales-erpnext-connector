@@ -1,0 +1,1 @@
+{"downloaded_rule_count": 0, "validator_commit": "cb1a58adfacbe9d8e0e4a4d5c7d1ef7786a05e6a", "verified_rule_count": 12}

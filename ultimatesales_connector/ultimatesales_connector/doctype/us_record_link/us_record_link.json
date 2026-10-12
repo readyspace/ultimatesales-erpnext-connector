@@ -1,0 +1,113 @@
+{
+  "doctype": "DocType",
+  "name": "US Record Link",
+  "module": "UltimateSales Connector",
+  "custom": 0,
+  "autoname": "field:link_key",
+  "engine": "InnoDB",
+  "track_changes": 0,
+  "allow_rename": 0,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "field_order": [
+    "link_key",
+    "connection",
+    "company",
+    "record_kind",
+    "external_id",
+    "external_contact_id",
+    "lead",
+    "opportunity"
+  ],
+  "fields": [
+    {
+      "fieldname": "link_key",
+      "label": "Immutable Link Key",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "read_only": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "connection",
+      "label": "Connection",
+      "fieldtype": "Link",
+      "options": "US Connection",
+      "reqd": 1,
+      "in_list_view": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "record_kind",
+      "label": "Record Kind",
+      "fieldtype": "Select",
+      "options": "Contact\nOpportunity",
+      "reqd": 1,
+      "in_list_view": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "external_id",
+      "label": "External ID",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "external_contact_id",
+      "label": "External Contact ID",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "lead",
+      "label": "ERPNext Lead",
+      "fieldtype": "Link",
+      "options": "Lead",
+      "reqd": 1,
+      "in_list_view": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "opportunity",
+      "label": "ERPNext Opportunity",
+      "fieldtype": "Link",
+      "options": "Opportunity",
+      "in_list_view": 1,
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "select": 1
+    },
+    {
+      "role": "UltimateSales Operator",
+      "read": 1,
+      "select": 1
+    },
+    {
+      "role": "UltimateSales Auditor",
+      "read": 1,
+      "select": 1
+    }
+  ],
+  "links": [],
+  "actions": [],
+  "states": [],
+  "creation": "2026-10-12 00:00:00.000000",
+  "modified": "2026-10-12 00:00:00.000000",
+  "owner": "Administrator",
+  "modified_by": "Administrator"
+}

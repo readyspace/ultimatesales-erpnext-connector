@@ -1,0 +1,24 @@
+{
+  "repository": "readyspace/ultimatesales-erpnext-connector",
+  "visibility": "public",
+  "verified_first_source_sha": "a0b280917a6199b053183b9d18531ebe53bfbce5",
+  "runs": [
+    {
+      "id": 38234142907,
+      "name": "Unchanged pinned Marketplace security rules",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "a0b280917a6199b053183b9d18531ebe53bfbce5",
+      "url": "https://github.com/readyspace/ultimatesales-erpnext-connector/actions/runs/38234142907"
+    },
+    {
+      "id": 38234142819,
+      "name": "Offline rules and adapter tests",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "a0b280917a6199b053183b9d18531ebe53bfbce5",
+      "url": "https://github.com/readyspace/ultimatesales-erpnext-connector/actions/runs/38234142819"
+    }
+  ],
+  "scope": "Standalone Python offline suite and pinned static rules; installed-site workflow not dispatched."
+}

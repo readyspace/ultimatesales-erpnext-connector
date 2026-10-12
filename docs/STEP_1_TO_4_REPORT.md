@@ -47,8 +47,8 @@ checks, operator/company/worker diagnostics, linked records and allowlisted reco
 messages. Default gates are off; install requires no token or CRM request. Source
 recipes pin exact Framework/ERPNext/Bench/Pilot/runtime revisions and configure
 separate clean sites without HRMS. CI definitions include skip-failing installed
-acceptance. Offline/security CI runs started on the published source; completion
-is recorded separately in PUBLICATION.md. Installed acceptance was not dispatched.
+acceptance. Offline/security CI completed successfully for the recorded published source
+commit; exact results are in PUBLICATION.md. Installed acceptance was not dispatched.
 
 ## Actual tests and deliverables
 

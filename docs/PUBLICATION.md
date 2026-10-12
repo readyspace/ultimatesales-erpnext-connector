@@ -19,8 +19,14 @@ The first pushed source commit is `a0b280917a6199b053183b9d18531ebe53bfbce5`, ma
 Final archive/commit hashes are recorded in the delivery manifest.
 
 Publication execution: **PASS — created and pushed publicly**.
-Offline and unchanged-rule security CI runs were observed in progress for the
-first published commit; no successful remote result is claimed at this snapshot.
+Remote CI **PASS** for the first published source commit:
+
+- [Offline tests](https://github.com/readyspace/ultimatesales-erpnext-connector/actions/runs/38234142819): completed/success.
+- [Unchanged pinned security rules](https://github.com/readyspace/ultimatesales-erpnext-connector/actions/runs/38234142907): completed/success.
+
+`evidence/public-source-ci.json` records exact run IDs and source SHA. Subsequent
+documentation-only commits trigger fresh CI; the above results apply specifically
+to the recorded source commit. Final delivery reports record the current remote SHA.
 The installed-site workflow was not dispatched. No public-beta
 release/tag, Marketplace submission, production rollout or installed/live approval
 is implied. Disposable Bench/Pilot/CRM resources remain undesignated; 26 installed

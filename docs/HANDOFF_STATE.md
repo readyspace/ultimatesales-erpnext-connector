@@ -2,7 +2,9 @@
 
 The fixture security repair is complete locally: **264 offline tests PASS**;
 unchanged pinned Marketplace Semgrep scan **PASS**, **0 blocking**, 43 advisory
-findings, 29 scanned files, no errors or missing installed targets. Historical
+findings, 29 scanned files, no errors or missing installed targets. Remote offline
+and security CI also passed for published source a0b2809; exact IDs/SHA are in
+PUBLICATION.md and evidence/public-source-ci.json. Historical
 0.1.0a2 failure is retained separately; it is no longer the current verdict.
 
 Shared helpers neither commit nor spawn processes. Native Bench execute owns
